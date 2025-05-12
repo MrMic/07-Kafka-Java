@@ -38,7 +38,7 @@ public class ConsumerDemoAssignSeek {
     consumer.assign(Arrays.asList(partitionToReadFrom));
 
     // seek to a specific offset
-    long offsetToReadFrom = 5L;
+    long offsetToReadFrom = 15L;
     consumer.seek(partitionToReadFrom, offsetToReadFrom);
 
     int numberOfMessagesToRead = 5;
